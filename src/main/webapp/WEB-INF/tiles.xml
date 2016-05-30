@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="Layout" template="/WEB-INF/views/templates/template-layout.jsp">
+		<put-attribute name="title" value="Layout"/>
+		<put-attribute name="header" value="/WEB-INF/views/pages-partial/header.jsp"/>
+		<put-attribute name="menu" value="/WEB-INF/views/pages-partial/menu.jsp"/>
+		<put-attribute name="footer" value="/WEB-INF/views/pages-partial/footer.jsp"/>
+	</definition>
+	<definition name="HomePage" extends="Layout">
+		<put-attribute name="title" value="Trang Chủ"/>
+		<put-attribute name="content" value="/WEB-INF/views/pages-partial/home-content.jsp"/>
+	</definition>
+	<definition name="LoginPage" extends="Layout">
+		<put-attribute name="title" value="Đăng ký"/>
+		<put-attribute name="content" value="/WEB-INF/views/pages-partial/login-content.jsp"/>
+	</definition>
+	<!-- Register define -->
+</tiles-definitions>
