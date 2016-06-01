@@ -6,7 +6,7 @@
     <session-factory>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.password">jzvzLFJAZMYN</property>
-        <property name="hibernate.connection.url">jdbc:mysql://${OPENSHIFT_MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_PORT}/smartphone?useUnicode=true&amp;characterEncoding=UTF-8</property>
+        <property name="hibernate.connection.url">jdbc:mysql://${OPENSHIFT_MYSQL_DB_HOST}:${OPENSHIFT_MYSQL_DB_PORT}/movie_review_db?useUnicode=true&amp;characterEncoding=UTF-8</property>
         <property name="hibernate.connection.username">adminxtTYJf2</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="show_sql">true</property>
