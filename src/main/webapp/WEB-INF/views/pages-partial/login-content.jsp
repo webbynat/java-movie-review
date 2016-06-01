@@ -19,5 +19,18 @@
 			<button class="btn btn-primary btn-submit" id="sign-in">Sign In</button>
 		</fieldset>
 		</form>
+		<hr>
+		<div class="text-center">
+			<label for="3rdparty">Login via</label>
+			<div class="row">
+				<div class="col-xs-3 col-xs-offset-3">
+					<a href="#"><img class="brand google-brand" src='<c:url value="resources/images/google-plus.svg"></c:url>' alt="google-brand"/></a>
+				</div>
+				<div class="col-xs-3">
+					<a href="#"><img class="brand facebook-brand" src='<c:url value="resources/images/facebook.svg"></c:url>' alt="facebook-brand"/></a>
+				</div>
+			</div>
+		</div>
 	</section>
+	<div class="text-center">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 </section>

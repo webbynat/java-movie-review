@@ -60,3 +60,15 @@ label{
 .banner img{
 	width: 100%;
 }
+
+.footer{
+	background: #222428;
+	padding: 10px 0px;
+}
+
+.brand{
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+}
