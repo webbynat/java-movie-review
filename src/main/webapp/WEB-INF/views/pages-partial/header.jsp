@@ -16,6 +16,10 @@
 				<%-- <li><a href='<c:url value="#"></c:url>'><!-- Show Username --></a></li>
 				<li><a href='<c:url value="/logout"></c:url>'>Sign Out</a></li> --%>
 			</ul>
+			<button class="btn navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"></button>
+			<ul class="navbar-collapse collapse">
+				<li>HQTOAN</li>
+			</ul>
 		</div>
 		<!-- Navigation Bar -->
 	</nav>
