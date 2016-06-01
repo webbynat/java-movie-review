@@ -1,0 +1,4 @@
+Please make note of these MySQL credentials again:
+  Root User: adminxtTYJf2
+  Root Password: jzvzLFJAZMYN
+URL: https://webbynat-hqtoan.rhcloud.com/phpmyadmin/
