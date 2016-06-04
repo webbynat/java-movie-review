@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 30, 2016 4:44:38 PM by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="models.pojo.Comment" table="comment" catalog="movie_review_db" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="movie" class="models.pojo.Movie" fetch="select">
+            <column name="id_movie" not-null="true" />
+        </many-to-one>
+        <many-to-one name="user" class="models.pojo.User" fetch="select">
+            <column name="id_user" not-null="true" />
+        </many-to-one>
+        <property name="comment" type="string">
+            <column name="comment" length="65535" />
+        </property>
+        <property name="commentTime" type="timestamp">
+            <column name="comment_time" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>
