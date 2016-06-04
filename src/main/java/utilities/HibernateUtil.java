@@ -15,6 +15,7 @@ import org.hibernate.SessionFactory;
  *
  * @author nb
  */
+@SuppressWarnings({ "unused", "deprecation" })
 public class HibernateUtil {
 	private static final SessionFactory sessionFactory = buildSessionFactory();
 

@@ -4,6 +4,8 @@
   <welcome-file-list>
     <welcome-file>homepage</welcome-file>
   </welcome-file-list>
+  
+  <!-- Home controller -->
   <servlet>
     <display-name>HomeController</display-name>
     <servlet-name>HomeController</servlet-name>
@@ -13,6 +15,8 @@
     <servlet-name>HomeController</servlet-name>
     <url-pattern>/homepage</url-pattern>
   </servlet-mapping>
+  
+  
   <servlet>
     <display-name>LoginController</display-name>
     <servlet-name>LoginController</servlet-name>
@@ -23,6 +27,15 @@
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
   <servlet>
+    <display-name>LogoutController</display-name>
+    <servlet-name>LogoutController</servlet-name>
+    <servlet-class>controllers.LogoutController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutController</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <display-name>RegisterController</display-name>
     <servlet-name>RegisterController</servlet-name>
     <servlet-class>controllers.RegisterController</servlet-class>
@@ -31,7 +44,6 @@
     <servlet-name>RegisterController</servlet-name>
     <url-pattern>/register</url-pattern>
   </servlet-mapping>
-  
   <context-param>
     <param-name>org.apache.tiles.definition.DefinitionFactory.DEFINITIONS_CONFIG</param-name>
     <param-value>/WEB_INF/tiles.xml</param-value>

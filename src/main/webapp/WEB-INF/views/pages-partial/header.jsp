@@ -17,13 +17,16 @@
 		</div>
 		<div class="container-fluid collapse navbar-collapse" id="toggler">
 			<ul class="nav navbar-nav navbar-right">
-				<!-- If not logged in -->
-				<li><a href='<c:url value="/login"></c:url>'>Sign In</a></li>
-				<li><a href='<c:url value="/register"></c:url>'>Sign Up</a></li>
-				
-				<!-- If logged in -->
-				<%-- <li><a href='<c:url value="#"></c:url>'><!-- Show Username --></a></li>
-				<li><a href='<c:url value="/logout"></c:url>'>Sign Out</a></li> --%>
+			<c:choose>
+				<c:when test="${empty sessionScope.displayName}">
+					<li><a href='<c:url value="/login"></c:url>'>Sign In</a></li>
+					<li><a href='<c:url value="/register"></c:url>'>Sign Up</a></li>
+				</c:when>
+				<c:otherwise>
+					<li><a href='<c:url value="#"></c:url>'>${sessionScope.displayName}</a></li>
+					<li><a href='<c:url value="/logout"></c:url>'>Sign Out</a></li>
+				</c:otherwise>
+			</c:choose>
 			</ul>
 		</div>
 		<!-- Navigation Bar -->

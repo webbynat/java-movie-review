@@ -3,25 +3,41 @@
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <section id="content">
 	<div class="text-center">
-		<h1 class="top-title ">Sign in to Movie Review</h1>
+		<h1 class="top-title ">Sign up to Movie Review</h1>
 	</div>
 	<section class="login-form">
-		<form action='<c:url value="/login"></c:url>' method="post">
+		<form action='<c:url value="/register"></c:url>' method="post">
 		<fieldset>
 			<div class="form-group">
-				<label for="username">Username or email address</label>
-				<input class="form-control" name="username" tabindex="1">
+				<label for="username">Username <span>*</span></label>
+				<input class="form-control" name="username" tabindex="1" required>
 			</div>
 			<div class="form-group">
-				<label for="password">Password<a href="#" class="forgot-password" tabindex="4">Forgot password?</a></label>
-				<input class="form-control" name="password" type="password" tabindex="2">
+				<label for="password">Password <span>*</span></label>
+				<input class="form-control" name="password" type="password" tabindex="2" required>
+			</div>
+			<div class="form-group">
+				<label for="password">Re-enter Password <span>*</span></label>
+				<input class="form-control" type="password" tabindex="3" required>
+			</div>
+			<div class="form-group">
+				<label for="username">Display Name</label>
+				<input class="form-control" name="displayName" tabindex="4">
+			</div>
+			<div class="form-group">
+				<label for="username">Email <span>*</span></label>
+				<input class="form-control" name="email" type="email" tabindex="5" required>
+			</div>
+			<div class="form-group">
+				<label for="username">Phone</label>
+				<input class="form-control" name="phone" tabindex="6">
 			</div>
 			<div style="color:red; font-style:italic;">
 				<c:if test="${ not empty error }">
 					<c:out value="${error}"></c:out>
 				</c:if>
 			</div>
-			<button class="btn btn-primary btn-submit" id="sign-in" tabindex="3">Sign In</button>
+			<button class="btn btn-primary btn-submit" id="sign-in" tabindex="7">Sign Up</button>
 		</fieldset>
 		</form>
 		<hr>
