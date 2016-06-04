@@ -62,6 +62,5 @@ public class RegisterController extends HttpServlet {
 			RequestForward.forward(request, response, "/WEB-INF/views/pages/webview.jsp");
 		}
 	}
-	
 
 }
