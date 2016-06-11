@@ -31,7 +31,7 @@
     <servlet-name>RegisterController</servlet-name>
     <url-pattern>/register</url-pattern>
   </servlet-mapping>
-    <servlet>
+  <servlet>
     <display-name>LogoutController</display-name>
     <servlet-name>LogoutController</servlet-name>
     <servlet-class>controllers.LogoutController</servlet-class>
@@ -39,6 +39,15 @@
   <servlet-mapping>
     <servlet-name>LogoutController</servlet-name>
     <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <display-name>ProfileController</display-name>
+    <servlet-name>ProfileController</servlet-name>
+    <servlet-class>controllers.ProfileController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProfileController</servlet-name>
+    <url-pattern>/profile</url-pattern>
   </servlet-mapping>
   <context-param>
     <param-name>org.apache.tiles.definition.DefinitionFactory.DEFINITIONS_CONFIG</param-name>

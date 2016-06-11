@@ -25,7 +25,7 @@
 			  </c:when>
 			  <c:otherwise>
 				<!-- If logged in -->
-				<li><a href='<c:url value="#"></c:url>'>${ sessionScope.displayname }</a></li>
+				<li><a href='<c:url value="/profile"></c:url>'>${ sessionScope.displayname }</a></li>
 				<li><a href='<c:url value="/logout"></c:url>'>Sign Out</a></li>
 			  </c:otherwise>
 			</c:choose>

@@ -25,5 +25,17 @@
 		<put-attribute name="footer" value=""></put-attribute>
 		<put-attribute name="content" value="/WEB-INF/views/pages-partial/register-content.jsp"/>
 	</definition>
+	<definition name="ProfilePage" extends="Layout">
+		<put-attribute name="title" value="Thông tin cá nhân"/>
+		<!-- Disable footer in LoginPage -->
+		<put-attribute name="footer" value=""></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/views/pages-partial/profile.jsp"/>
+	</definition>
+	<definition name="403Page" extends="Layout">
+		<put-attribute name="title" value="Page not found"/>
+		<!-- Disable footer in LoginPage -->
+		<put-attribute name="footer" value="/WEB-INF/views/pages-partial/footer.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/views/pages-partial/403.jsp"/>
+	</definition>
 	<!-- Register define -->
 </tiles-definitions>

@@ -68,15 +68,32 @@ public class AccountServiceIml implements AccountService {
 		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
 		session.beginTransaction();
 		
-		String hql = "UPDATE User set password= :pw, phone= :ph, email= :em  "  + 
+		String hql = "UPDATE User set phone= :ph, email= :em  "  + 
 	             "WHERE username = :us";
 		Query query = session.createQuery(hql);
-		query.setParameter("pw", user.getPassword());
 		query.setParameter("ph", user.getPhone());
 		query.setParameter("em", user.getEmail());
 		query.setParameter("us", user.getUsername());
 		int rs = query.executeUpdate();
 		
+		session.getTransaction().commit();
+		if(rs >= 0)
+			return true;
+		return false;
+	}
+
+	@Override
+	public boolean changePassword(String usernameOrEmail, String password) {
+		// TODO Auto-generated method stub
+		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+		session.beginTransaction();
+		
+		String hql = "Update User set password = :pw where username = :us";
+		Query query = session.createQuery(hql);
+		query.setParameter("us", usernameOrEmail);
+		query.setParameter("pw", password);
+		
+		int rs = query.executeUpdate();
 		session.getTransaction().commit();
 		if(rs >= 0)
 			return true;

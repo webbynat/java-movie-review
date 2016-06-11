@@ -21,4 +21,6 @@ public interface AccountService {
 	
 	/*Update user information, when user click view profile and edit -> update their information*/
 	public boolean updateUserInformation(User user);
+	
+	public boolean changePassword(String userOrEmail,String password);
 }
